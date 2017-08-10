@@ -10,6 +10,8 @@ import Categories from './components/Categories';
 import Share from './components/Share';
 import Abouts from './components/Abouts';
 import MyFooter from './components/MyFooter';
+import Menu from './components/Menu';
+import ListImages from './components/ListImages';
 
 import store from './configStore';
 
@@ -22,10 +24,18 @@ export default class App extends Component {
                 <Container>
                     <RouterWithRedux>
                         <Scene key="root" tabs={true} tabBarComponent={MyFooter} >
-                            <Scene key="Home"
-                                component={Categories}
-                                title="Love Images"
-                                inital={true} />
+                            <Scene key="M" title="Categories" inital={true}>
+                                <Scene key="Home"
+                                    component={Categories}
+                                    title="Categories"
+                                    inital={true} />
+                                <Scene key="ListImages"
+                                    component={ListImages}
+                                    title="Images" />
+                            </Scene>
+                            <Scene key="Menu"
+                                component={Menu}
+                                title="Love Images" />
                             <Scene key="Favorites"
                                 component={Favorites}
                                 title="Favorites" />
@@ -35,6 +45,7 @@ export default class App extends Component {
                             <Scene key="About"
                                 component={Abouts}
                                 title="About Us" />
+
                         </Scene>
                     </RouterWithRedux>
                 </Container>

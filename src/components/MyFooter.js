@@ -3,11 +3,19 @@ import { Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, I
 import { Actions } from 'react-native-router-flux';
 
 export default class MyFooter extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            home: 1
+        }
+    }
+
     render() {
         return (
             <Footer>
                 <FooterTab>
-                    <Button vertical onPress={Actions.Home}>
+                    <Button vertical onPress={Actions.Menu}>
                         <Icon name="apps" />
                         <Text>Menu</Text>
                     </Button>
