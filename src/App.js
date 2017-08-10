@@ -8,6 +8,7 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
 import { Provider, connect } from 'react-redux';
 import Lists from './components/Lists';
 import Test from './components/Test';
+
 import store from './configStore';
 
 const RouterWithRedux = connect()(Router)
@@ -18,8 +19,13 @@ export default class App extends Component {
             <Provider store={store}>
                 <RouterWithRedux>
                     <Scene key="root">
-                        <Scene key="Home" component={Test} title="Home" inital={true} />
-                        <Scene key="List" component={Lists} title="List" />
+                        <Scene key="Home"
+                            component={Test}
+                            title="Home"
+                            inital={true} />
+                        <Scene key="List"
+                            component={Lists}
+                            title="List" />
                     </Scene>
                 </RouterWithRedux>
             </Provider>

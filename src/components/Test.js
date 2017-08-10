@@ -7,17 +7,6 @@ export default class Test extends Component {
     render() {
         return (
             <Container>
-                <Header>
-                    <Left>
-                        <Button transparent>
-                            <Icon name='menu' />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title>{this.props.title}</Title>
-                    </Body>
-                    <Right />
-                </Header>
                 <Content>
                     <Text>
                         This is Content Section
