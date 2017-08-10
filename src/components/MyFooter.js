@@ -19,9 +19,9 @@ export default class MyFooter extends Component {
                         <Icon name="navigate" />
                         <Text>Share</Text>
                     </Button>
-                    <Button vertical onPress={Actions.Abouts}>
+                    <Button vertical onPress={Actions.About}>
                         <Icon name="person" />
-                        <Text>Abouts</Text>
+                        <Text>About</Text>
                     </Button>
                 </FooterTab>
             </Footer>

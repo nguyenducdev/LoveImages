@@ -15,11 +15,6 @@ import store from './configStore';
 
 const RouterWithRedux = connect()(Router)
 
-const TabIcon = ({ selected, title }) => {
-    return (
-        <Text style={{ color: selected ? 'red' : 'black' }}>{title}</Text>
-    );
-}
 export default class App extends Component {
     render() {
         return (
@@ -37,9 +32,9 @@ export default class App extends Component {
                             <Scene key="Share"
                                 component={Share}
                                 title="Share" />
-                            <Scene key="Abouts"
+                            <Scene key="About"
                                 component={Abouts}
-                                title="Abouts" />
+                                title="About Us" />
                         </Scene>
                     </RouterWithRedux>
                 </Container>
