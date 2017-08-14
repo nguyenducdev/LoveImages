@@ -1,12 +1,46 @@
 import React, { Component } from 'react';
-import { Container, Text } from 'native-base';
+import { Container, Content, List, ListItem, } from 'native-base';
+
+import CardImage from './CardImage';
 
 export default class ListImages extends Component {
     render() {
         return (
             <Container>
-                <Text>Share FaceBook</Text>
-                <Text>Share Google+</Text>
+                <Content>
+                    <List>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                        <ListItem>
+                            <CardImage />
+                        </ListItem>
+                    </List>
+                </Content>
             </Container>
         );
     }
