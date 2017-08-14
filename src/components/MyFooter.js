@@ -6,18 +6,15 @@ export default class MyFooter extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            home: 1
-        }
     }
 
     render() {
         return (
             <Footer>
                 <FooterTab>
-                    <Button vertical onPress={Actions.Menu}>
-                        <Icon name="apps" />
-                        <Text>Menu</Text>
+                    <Button vertical onPress={Actions.Index}>
+                        <Icon name="home" />
+                        <Text>Home</Text>
                     </Button>
                     <Button vertical onPress={Actions.Favorites}>
                         <Icon name="star" />
